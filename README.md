@@ -1,12 +1,21 @@
-# React + Vite
+<body>
+  <header>
+    <h1>🌟 Munganga 🌟</h1>
+    <p><strong>🚧 Em desenvolvimento! 🚧</strong> A Munganga é uma plataforma de ensino de programação com IA, voltada para iniciantes. No momento, estamos trabalhando nela e ainda não está acessível, mas em breve teremos novidades! Fica ligado! 😎</p>
+  </header>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <section>
+    <h2>💡 O que estamos criando</h2>
+    <p>A Munganga será uma plataforma de aprendizado de programação com foco em IA 🤖, computação em nuvem 🌐 e muita colaboração entre os usuários 🤝. Vai ser top!</p>
+  </section>
 
-Currently, two official plugins are available:
+  <section>
+    <h2>🤗 Como contribuir</h2>
+    <p>Quer ajudar? Estamos organizando tudo, mas fique à vontade para dar sugestões ou entrar em contato! Vamos trocar ideias! 💬💡</p>
+  </section>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  <footer>
+    <p>Desenvolvido com ❤️ por <strong>Munganga Team</strong> 💻</p>
+  </footer>
+</body>
+</html>
