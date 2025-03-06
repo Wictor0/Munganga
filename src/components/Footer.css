@@ -1,0 +1,75 @@
+.footer {
+  position: relative;
+  text-align: center;
+  background-color: white;
+  padding: 6rem 0 0; /* Tira o padding-bottom gigante */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-barra {
+  position: absolute;
+  bottom: 0; /* Ajuste esse valor até encaixar certinho */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 80em;
+  z-index: 0;
+}
+
+.footer-content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 3rem; /* Evita que o conteúdo bata na imagem */
+}
+
+.footer-logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.footer-info {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.footer-section h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-social a img {
+  width: 24px;
+}
+
+/* Direitos reservados no centro, abaixo de tudo */
+.footer-copy {
+  font-size: 0.8rem;
+  color: gray;
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 2em;
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,67 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 250px; /* Garante que tenha o mesmo tamanho do background */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Mantém os itens empilhados */
+  align-items: center; /* Centraliza os botões em relação à logo */
+  justify-content: center; /* Centraliza verticalmente */
+  max-height: 100%; /* Faz o conteúdo ocupar toda a altura do header */
+  padding-left: 6em; /* Mantém a posição na esquerda */
+  margin-top: 20em; /* Adiciona um espaço entre o header e o conteúdo */
+}
+
+.logo {
+  max-height: 100%; /* Ajustado para um tamanho maior */
+  width: auto;
+}
+
+.buttons {
+  display: flex;
+  align-items: center; /* Mantém os botões centralizados na logo */
+  gap: 2em; /* Espaço entre os botões */
+  margin-top: 3em; /* Adiciona um pequeno espaço abaixo da logo */
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra interna para efeito de pressionado */
+  transform: scale(
+    0.98
+  ); /* Reduz ligeiramente para parecer que está sendo pressionado */
+}
+
+.yellow {
+  background-color: #ffb609;
+  color: white;
+}
+
+.green {
+  background-color: #00af49;
+  color: white;
+}
