@@ -1,0 +1,201 @@
+/* Sobre nós */
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding: 4em 8em;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 22em; /* Ajuste para empurrar para baixo, considerando a altura do Header */
+  margin-left: 4.5em;
+  margin-right: 3em;
+}
+
+.about-content {
+  flex: 1;
+  text-align: justify; /* Justifica o texto */
+}
+
+.about-content h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  text-align: center; /* Centraliza o título */
+}
+
+.about-content p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.about-btn {
+  background-color: #2d54a5;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1em;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  margin: 1.5em auto 0; /* Centraliza o botão */
+}
+
+.about-btn:hover {
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.4); /* Ajustando para ser mais visível */
+  transform: scale(0.98); /* Pequena redução para simular um clique */
+}
+
+.about-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+/*Segundo Container*/
+
+.about-munganga {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4em 2em;
+  max-width: 1035px; /* Limitando para não ficar exagerado */
+  height: auto; /* Ajusta automaticamente para não cortar */
+  margin: 0 auto;
+}
+
+.background-about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.about-content {
+  max-width: 800px;
+  text-align: justify;
+}
+
+.about-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon-emoji {
+  width: 30px;
+  height: auto;
+}
+
+.btn-learn-more {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #c44140;
+  color: white;
+}
+
+.btn-learn-more:hover {
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.4); /* Ajustando para ser mais visível */
+  transform: scale(0.98); /* Pequena redução para simular um clique */
+}
+
+/*Seção Faculdade*/
+.university-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 10%;
+  margin-top: 2em;
+  margin-left: 4.5em;
+  margin-right: 3em;
+}
+
+.university-content {
+  max-width: 35%; /* Reduzi a largura para deixar mais compacto */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o título e o botão */
+  text-align: center;
+}
+
+.university-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.justified-text {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn-university {
+  display: block;
+  margin-top: 2rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #2f56a6;
+  color: white;
+}
+
+.btn-university:hover {
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.4); /* Ajustando para ser mais visível */
+  transform: scale(0.98); /* Pequena redução para simular um clique */
+}
+
+.university-images {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.uni-image {
+  max-width: 19em;
+  width: 100%;
+  height: auto;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/fundo-munganga.svg");
+  background-size: 80vw auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -100; /* Fica atrás de tudo */
+  pointer-events: none; /* Garante que elementos acima sejam clicáveis */
+  opacity: 0.5; /* Ajuste conforme necessário */
+}
