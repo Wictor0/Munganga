@@ -1,0 +1,172 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Garante que o fundo do modal também fique acima de tudo */
+}
+
+.modal {
+  z-index: 9999; /* Coloca o modal acima de todos os outros elementos */
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  width: 380px;
+  height: 450px; /* Diminuindo a altura do pop-up */
+  position: relative;
+  text-align: center;
+}
+
+.sol {
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85px;
+}
+
+.fechar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.fechar img {
+  width: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.input-label {
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 2px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 28px;
+}
+
+.forgot-password {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: #000;
+  margin-top: -22px;
+  margin-bottom: 22px;
+  opacity: 0.8;
+}
+
+.botao {
+  width: 70%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold; /* Adicionando negrito ao texto dos botões */
+  cursor: pointer;
+}
+
+.botao.verde {
+  background-color: #00af49;
+  color: white;
+  margin-top: 0em;
+}
+
+.botao.amarelo {
+  background-color: #ffb609;
+  color: white;
+  margin-top: 0.4em;
+}
+
+.botao.verde:hover,
+.botao.amarelo:hover {
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra interna no hover */
+  transform: scale(0.98); /* Diminui o tamanho do botão ao passar o mouse */
+}
+
+.criar-conta {
+  margin-top: 0;
+}
+
+.criar-conta p {
+  margin-top: 2.5em;
+  font-size: 12px;
+  margin-bottom: -0.2em;
+  cursor: default;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container {
+  position: relative;
+}
+
+/* Caixa de erro estilizada */
+.input-container {
+  position: relative;
+}
+
+.error-message {
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  color: #856404; /* Cor mais suave, amarelo esverdeado */
+  font-size: 12px;
+  font-weight: bold;
+  background: #fff3cd; /* Cor de fundo mais suave */
+  padding: 6px 12px;
+  border-radius: 4px;
+  width: auto;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2.5s ease; /* Apenas a transição de opacidade */
+}
+
+.error-message.show {
+  opacity: 1;
+}
+
+.error-message.hide {
+  opacity: 0;
+}
+
+.error-message::before {
+  content: "";
+  position: absolute;
+  top: -8px; /* A seta agora aponta para o input */
+  left: 20px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #fff3cd; /* Seta voltada para cima */
+}
+
+.input-container input:focus {
+  border-color: #ffb609; /* Cor para input quando em foco */
+}
