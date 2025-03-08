@@ -1,0 +1,204 @@
+.pagina-login {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.login-fundo-noise {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -3;
+}
+
+.login-fundo-cacto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: 28%;
+  z-index: -2;
+}
+
+.login-fundo-nuvem {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: auto;
+  height: 10%;
+  z-index: -2;
+}
+
+/* 🔹 CONTAINER PRINCIPAL */
+.container-login {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 470px;
+  padding: 2em;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #b7b7b7;
+  box-shadow: none;
+}
+
+.conteudo-login {
+  width: 90%;
+  max-width: 395px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.conteudo-login h2 {
+  cursor: default;
+  margin-bottom: 1em;
+}
+
+/* 🔹 INPUTS */
+.campo-login {
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.login-input-texto {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b7b7b7;
+  border-radius: 15px;
+  font-size: 16px;
+  outline: none;
+}
+
+.login-icone-senha {
+  position: absolute;
+  margin-top: 0.5em;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* 🔹 BOTÃO LOGIN */
+.botao-entrar {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background-color: #424242;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 1em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.botao-entrar:hover {
+  background-color: #000;
+}
+
+/* 🔹 TERMOS */
+.login-termos {
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+  opacity: 0.8;
+  cursor: default;
+  margin-bottom: 3em;
+}
+
+.login-termos a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* 🔹 LINK "DIFICULDADES PARA ENTRAR?" */
+.login-link-problema {
+  position: absolute;
+  bottom: -1.5em;
+  right: 0;
+  font-size: 13.5px;
+  color: #666;
+  opacity: 0.8;
+}
+
+.login-link-problema a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* 🔹 CONTAINER "AINDA NÃO TEM UMA CONTA?" */
+.container-redirecionar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 470px;
+  margin-top: 1.5em;
+}
+
+.divisor-cadastro {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 1em;
+  cursor: default;
+}
+
+.divisor-cadastro::before,
+.divisor-cadastro::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #b7b7b7;
+  margin: 0 10px;
+}
+
+/* 🔹 BOTÃO "CRIAR SUA CONTA" */
+.botao-criar-wrapper {
+  margin-top: 0.5em;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.botao-criar-img {
+  width: 100%;
+  max-width: 470px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  display: block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.botao-criar-img:hover {
+  transform: scale(1.02);
+}
+
+/* 🔹 Texto centralizado dentro da imagem */
+.botao-criar-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-align: center;
+  pointer-events: none;
+  transition: transform 0.2s ease-in-out;
+}

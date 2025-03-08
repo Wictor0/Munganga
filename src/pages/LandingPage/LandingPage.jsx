@@ -1,18 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../components/Header";
-import Footer from "../../components/Footer"; // Verifique o caminho correto
-import "./LandingPage.css"; // Importamos o CSS
+import Footer from "../../components/Footer";
+import LoginModal from "../../components/LoginModal";
+import "./LandingPage.css";
 
-import aboutImage from "./assets/sobre-nos.png"; // Imagem do Sobre Nós
-import containerBg from "./assets/container.png"; // Imagem de fundo da seção
-import emojiIcon from "./assets/emoji.png"; // Emoji PNG
-import img1 from "./assets/img1.png"; // Emoji PNG
-import img2 from "./assets/img2.png"; // Emoji PNG
+import aboutImage from "./assets/sobre-nos.png";
+import containerBg from "./assets/container.png";
+import emojiIcon from "./assets/emoji.png";
+import img1 from "./assets/img1.png";
+import img2 from "./assets/img2.png";
 
 const LandingPage = () => {
+  const [isLoginOpen, setIsLoginOpen] = useState(false); // Estado para controlar o modal
+
+  const openLoginModal = () => {
+    setIsLoginOpen(true); // Abre o modal
+  };
+
+  const closeLoginModal = () => {
+    setIsLoginOpen(false); // Fecha o modal
+  };
+
   return (
     <div className="landing-page">
-      <Header />
+      {/* Passamos a função para abrir o modal */}
+      <Header onLoginClick={openLoginModal} />
+
+      {/* Modal de Login */}
+      <LoginModal isOpen={isLoginOpen} onClose={closeLoginModal} />
+
       {/* Seção Sobre Nós */}
       <section className="about">
         <div className="about-content">
@@ -36,7 +52,8 @@ const LandingPage = () => {
           <img src={aboutImage} alt="Equipe Munganga" className="about-image" />
         </div>
       </section>
-      {/* Seção Sobre Nós */}
+
+      {/* Seção O que é Munganga */}
       <section className="about-munganga">
         <img src={containerBg} alt="Fundo" className="background-about" />
         <div className="about-content">
@@ -59,6 +76,7 @@ const LandingPage = () => {
           <button className="btn-learn-more">Saiba mais</button>
         </div>
       </section>
+
       {/* Seção da Faculdade */}
       <section className="university-section">
         <div className="university-content">
@@ -70,14 +88,22 @@ const LandingPage = () => {
             <strong>universo acadêmico</strong> ao
             <strong> mercado</strong>.
           </p>
-          <button className="btn-university">Conheça a Universidade</button>
+          <button
+            className="btn-university"
+            onClick={() =>
+              window.open("https://www.wyden.com.br/unidades/unifbv", "_blank")
+            }
+          >
+            Conheça a Universidade
+          </button>
         </div>
         <div className="university-images">
           <img src={img1} alt="Imagem 1" className="uni-image" />
           <img src={img2} alt="Imagem 2" className="uni-image" />
         </div>
       </section>
-      <Footer /> {/* Footer no final da página */}
+
+      <Footer />
     </div>
   );
 };
