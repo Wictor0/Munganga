@@ -1,21 +1,18 @@
-<body>
-  <header>
-    <h1>🌟 Munganga 🌟</h1>
-    <p><strong>🚧 Em desenvolvimento! 🚧</strong> A Munganga é uma plataforma de ensino de programação com IA, voltada para iniciantes. No momento, estamos trabalhando nela e ainda não está acessível, mas em breve teremos novidades! Fica ligado! 😎</p>
-  </header>
+# 🌟 Munganga 🌟  
 
-  <section>
-    <h2>💡 O que estamos criando</h2>
-    <p>A Munganga será uma plataforma de aprendizado de programação com foco em IA 🤖, computação em nuvem 🌐 e muita colaboração entre os usuários 🤝. Vai ser top!</p>
-  </section>
+🚧 **Em desenvolvimento!** 🚧  
+A Munganga é uma plataforma de ensino de programação com IA, voltada para iniciantes. No momento, estamos trabalhando nela e ainda não está acessível, mas em breve teremos novidades! Fica ligado! 😎  
 
-  <section>
-    <h2>🤗 Como contribuir</h2>
-    <p>Quer ajudar? Estamos organizando tudo, mas fique à vontade para dar sugestões ou entrar em contato! Vamos trocar ideias! 💬💡</p>
-  </section>
+## 💡 O que estamos criando  
+A Munganga será uma plataforma de aprendizado de programação com foco em **IA 🤖, computação em nuvem 🌐 e colaboração 🤝**. Vai ser top!  
 
-  <footer>
-    <p>Desenvolvido com ❤️ por <strong>Munganga Team</strong> 💻</p>
-  </footer>
-</body>
-</html>
+## 🤗 Como contribuir  
+Quer ajudar? Estamos organizando tudo, mas fique à vontade para dar sugestões ou entrar em contato! Vamos trocar ideias! 💬💡  
+
+## 👥 Equipe Munganga  
+A Munganga é construída por um time incrível de colaboradores! 🚀  
+
+[![Contribuidores](https://contrib.rocks/image?repo=Wictor0/Munganga)](https://github.com/Wictor0/Munganga/graphs/contributors)  
+
+---  
+Desenvolvido com ❤️ por **Munganga Team** 💻  
