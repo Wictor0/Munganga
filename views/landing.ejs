@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <%- include("partials/head") %>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/landing.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+  </head>
+  <body>
+    <div class="landing-page">
+      <%- include('partials/header') %>
+
+      <section class="about">
+        <div class="about-content">
+          <h2>Sobre nós</h2>
+          <p>
+            A startup <strong>Munganga</strong>, criada por estudantes da
+            <strong>Unifbv Wyden em Recife</strong>, visa transformar o
+            aprendizado de programação em uma experiência
+            <strong>divertida e envolvente</strong>. Utilizando a
+            <strong>gamificação</strong>, eles estimulam a
+            <strong>criatividade</strong> e o
+            <strong>raciocínio lógico</strong>, tornando o aprendizado acessível
+            e empolgante.
+          </p>
+          <p>
+            Quer descobrir mais sobre como estão transformando essa visão em
+            realidade?
+          </p>
+          <button class="about-btn">Saiba mais</button>
+        </div>
+        <div class="about-image-container">
+          <img
+            src="/img/sobre-nos.png"
+            alt="Equipe Munganga"
+            class="about-image"
+          />
+        </div>
+      </section>
+
+      <section class="about-munganga">
+        <img src="/img/container.png" alt="Fundo" class="background-about" />
+        <div class="about-content">
+          <h2>
+            O que é o Munganga?
+            <img src="/img/emoji.png" alt="Emoji" class="icon-emoji" />
+          </h2>
+          <p>
+            A plataforma <strong>Munganga</strong> é uma
+            <strong>ferramenta educacional</strong> para
+            <strong>crianças e adolescentes</strong>, que transforma o
+            aprendizado de programação em uma experiência prática e envolvente.
+            Combinando <strong>desafios de código</strong>,
+            <strong>salas virtuais</strong> e um
+            <strong>sistema de rankings gamificado</strong>, ela incentiva o
+            desenvolvimento de <strong>pensamento computacional</strong> desde
+            cedo, promovendo a <strong>colaboração</strong> e a
+            <strong>competição saudável</strong>.
+          </p>
+          <button class="btn-learn-more">Saiba mais</button>
+        </div>
+      </section>
+
+      <section class="university-section">
+        <div class="university-content">
+          <h2 class="university-title">UniFBV - Wyden</h2>
+          <p class="justified-text">
+            Com apoio da <strong>Unifbv Wyden</strong>, usamos seus
+            <strong>recursos e espaço</strong> para criar
+            <strong>soluções educacionais avançadas</strong> que ligam o
+            <strong>universo acadêmico</strong> ao <strong>mercado</strong>.
+          </p>
+          <button
+            class="btn-university"
+            onclick="window.open('https://www.wyden.com.br/unidades/unifbv', '_blank')"
+          >
+            Conheça a Universidade
+          </button>
+        </div>
+        <div class="university-images">
+          <img src="/img/img1.png" alt="Imagem 1" class="uni-image" />
+          <img src="/img/img2.png" alt="Imagem 2" class="uni-image" />
+        </div>
+      </section>
+
+      <%- include('partials/footer') %>
+    </div>
+  </body>
+</html>

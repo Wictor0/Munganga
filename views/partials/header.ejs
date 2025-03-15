@@ -1,0 +1,31 @@
+<header class="header">
+  <link rel="stylesheet" href="/css/pages.css" />
+  <link rel="stylesheet" href="/css/header.css" />
+  <img src="/img/inicio-header.png" alt="Background" class="background" />
+  <div class="content">
+    <img src="/img/mung.svg" alt="Munganga Logo" class="logo" />
+    <div class="buttons">
+      <a href="/cadastro" class="btn yellow">Criar conta</a>
+      <a href="#" class="btn green" id="openLoginModal">Entrar</a>
+    </div>
+  </div>
+</header>
+
+<!-- Container onde o modal será injetado -->
+<div id="modalContainer"></div>
+
+<script>
+  // Função para carregar o modal via AJAX quando o botão for clicado
+  document.getElementById("openLoginModal").onclick = function (event) {
+    event.preventDefault(); // Evita o comportamento padrão do link
+
+    // Fazer requisição para o conteúdo do modal
+    fetch("/loginModal")
+      .then((response) => response.text())
+      .then((data) => {
+        // Carregar o conteúdo do modal no container
+        document.getElementById("modalContainer").innerHTML = data;
+      })
+      .catch((error) => console.error("Error:", error));
+  };
+</script>
