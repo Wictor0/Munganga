@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <%- include("partials/head") %>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+  </head>
+  <body>
+    <div class="pagina-login">
+      <!-- Imagens de fundo -->
+      <img
+        src="/img/noise.png"
+        alt="Fundo Granulado"
+        class="login-fundo-noise"
+      />
+      <img src="/img/cacto.png" alt="Cacto" class="login-fundo-cacto" />
+      <img src="/img/nuvem.png" alt="Nuvem" class="login-fundo-nuvem" />
+
+      <!-- Container principal do login -->
+      <div class="container-login">
+        <div class="conteudo-login">
+          <h2>Entre na sua conta</h2>
+          <div class="campo-login">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="login-input-texto" />
+          </div>
+
+          <div class="campo-login senha">
+            <label for="senha">Senha</label>
+            <div class="login-input-senha-wrapper">
+              <input type="password" id="senha" class="login-input-texto" />
+              <img
+                src="/img/olho-fechado.svg"
+                alt="Mostrar senha"
+                id="toggleSenha"
+                class="login-icone-senha"
+              />
+            </div>
+          </div>
+
+          <p class="login-link-problema">
+            <a href="#">Está com problemas para entrar?</a>
+          </p>
+
+          <button class="botao-entrar">Entrar</button>
+          <p class="login-termos">
+            Ao continuar, você concorda com os <a href="#">Termos de uso</a> e
+            <a href="#">Política de Privacidade</a>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Seção para redirecionar ao cadastro -->
+      <div class="container-redirecionar">
+        <div class="divisor-cadastro">Ainda não tem uma conta?</div>
+        <div
+          class="botao-criar-wrapper"
+          onclick="window.location.href='/cadastro'"
+        >
+          <img src="/img/criar.png" alt="Criar conta" class="botao-criar-img" />
+          <span class="botao-criar-texto">Criar sua conta</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("toggleSenha")
+        .addEventListener("click", function () {
+          const senhaInput = document.getElementById("senha");
+          if (senhaInput.type === "password") {
+            senhaInput.type = "text";
+            this.src = "/img/olho-aberto.svg";
+          } else {
+            senhaInput.type = "password";
+            this.src = "/img/olho-fechado.svg";
+          }
+        });
+    </script>
+  </body>
+</html>

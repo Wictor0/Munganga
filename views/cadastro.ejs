@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <%- include("partials/head") %>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/css/cadastro.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+  </head>
+  <body>
+    <div class="cadastro-page">
+      <img src="/img/noise.png" alt="Fundo Granulado" class="fundo-noise" />
+      <img src="/img/Cacto.png" alt="Cacto" class="fundo-cacto" />
+      <img src="/img/nuvem.png" alt="Nuvem" class="fundo-nuvem" />
+
+      <div class="cadastro-container">
+        <img
+          src="/img/container1.png"
+          alt="Container"
+          class="cadastro-container-img"
+        />
+        <div class="cadastro-content">
+          <h2>Crie sua conta</h2>
+          <div class="cadastro-opcoes">
+            <label>
+              <input type="radio" name="tipo" class="radio-opcao" />
+              <span>Aluno</span>
+            </label>
+            <label>
+              <input type="radio" name="tipo" class="radio-opcao" />
+              <span>Professor</span>
+            </label>
+          </div>
+          <div class="cadastro-input">
+            <label>E-mail</label>
+            <input type="email" class="input-texto" />
+          </div>
+          <div class="cadastro-input senha">
+            <label>Senha</label>
+            <div class="input-senha-wrapper">
+              <input type="password" class="input-texto" id="senha" />
+              <img
+                src="/img/olho-fechado.svg"
+                alt="Mostrar senha"
+                id="toggleSenha"
+                class="icone-senha"
+              />
+            </div>
+          </div>
+          <div class="requisitos-senha">
+            <span class="requisito">&#8226; Use 8 ou mais caracteres</span>
+            <span class="requisito">&#8226; Use números (ex. 1234)</span>
+            <span class="requisito"
+              >&#8226; Use letras maiúsculas e minúsculas</span
+            >
+            <span class="requisito">&#8226; Use símbolos (ex. !@#$)</span>
+          </div>
+          <button class="botao-cadastro">Criar conta</button>
+          <p class="termos">
+            Ao criar uma conta, você concorda com os
+            <a href="#">Termos de Uso</a> e
+            <a href="#">Política de Privacidade</a>.
+          </p>
+        </div>
+      </div>
+      <div class="login-container">
+        <div class="divider">Já tem uma conta?</div>
+        <button class="botao-login" onclick="window.location.href='/login'">
+          Entre na sua conta
+        </button>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("toggleSenha")
+        .addEventListener("click", function () {
+          var senhaInput = document.getElementById("senha");
+          var icon = document.getElementById("toggleSenha");
+          if (senhaInput.type === "password") {
+            senhaInput.type = "text";
+            icon.src = "/img/olho-aberto.svg";
+          } else {
+            senhaInput.type = "password";
+            icon.src = "/img/olho-fechado.svg";
+          }
+        });
+    </script>
+  </body>
+</html>

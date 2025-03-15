@@ -1,0 +1,53 @@
+<head>
+  <link rel="stylesheet" href="/css/loginModal.css" />
+</head>
+
+<div class="overlay open">
+  <div class="modal">
+    <img src="/img/sol.png" alt="Sol" class="sol" />
+    <button class="fechar" onclick="fecharModal()">
+      <img src="/img/fechar.png" alt="Fechar" />
+    </button>
+    <h2>Entrar</h2>
+    <p>Acesse sua conta</p>
+
+    <form action="/login" method="POST">
+      <div class="input-container">
+        <label class="input-label" for="email">E-mail</label>
+        <input type="email" id="email" name="email" required />
+        <% if (isTouched && errorMessage) { %>
+        <div class="error-message <%= isErrorVisible ? 'show' : 'hide' %>">
+          <%= errorMessage %>
+        </div>
+        <% } %>
+      </div>
+
+      <div class="input-container">
+        <label class="input-label" for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required />
+        <% if (isTouched && errorMessage) { %>
+        <div class="error-message <%= isErrorVisible ? 'show' : 'hide' %>">
+          <%= errorMessage %>
+        </div>
+        <% } %>
+      </div>
+
+      <a href="#" class="forgot-password">Esqueci minha senha</a>
+
+      <button class="botao verde" type="submit">Entrar</button>
+    </form>
+
+    <div class="criar-conta">
+      <p>Ainda não tem uma conta?</p>
+      <button class="botao amarelo" onclick="window.location.href='/cadastro';">
+        Criar conta
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function fecharModal() {
+    document.querySelector(".overlay").classList.remove("open");
+  }
+</script>
