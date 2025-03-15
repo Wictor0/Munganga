@@ -1,4 +1,4 @@
-# 🌟 Munganga 🌟  
+![header munganga](https://github.com/user-attachments/assets/ff635c9f-6b4a-451c-8cd4-ddd70f8d7630)
 
 🚧 **Em desenvolvimento!** 🚧  
 A Munganga é uma plataforma de ensino de programação com IA, voltada para iniciantes. No momento, estamos trabalhando nela e ainda não está acessível, mas em breve teremos novidades! Fica ligado! 😎  
